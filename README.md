@@ -207,8 +207,11 @@ unhealthy_threshold = 2 — достаточно одной неудачной �
 
 [<Файлы для terraform>](./cfg/)
 
-Удаляем все ресурсы командой ```bash terraform destroy ```
+Удаляем все ресурсы на yc командой
 
+```bash
+ terraform destroy
+   ```
 ![Удаляем](./img/del_ter.jpg)
 
 

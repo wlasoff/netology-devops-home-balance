@@ -106,41 +106,32 @@ echo "<html><h1>My cool web-server</h1></html>" > index.html
 
 2. Создаем группу ВМ в public подсети фиксированного размера с шаблоном LAMP и веб-страницей, содержащей ссылку на картинку из бакета:
 
-![alt text](image-3.png)
+![vm](./img/vm_group.jpg)
 
-![alt text](image-4.png)
-
- - Создать Instance Group с тремя ВМ и шаблоном LAMP. Для LAMP рекомендуется использовать `image_id = fd827b91d99psvq5fjit`.
+ - Создаtv Instance Group с тремя ВМ и шаблоном LAMP, где для LAMP рекомендуется использовать `image_id = fd827b91d99psvq5fjit`.
  
- ![alt text](image-2.png)
+![vm](./img/vm1.jpg)
  
-![Запущенные группы ВМ](image-10.png)
-
-![VM  в группе](image-11.png)
-
-
  - Для создания стартовой веб-страницы рекомендуется использовать раздел `user_data` в [meta_data](https://cloud.yandex.ru/docs/compute/concepts/vm-metadata).
  
 [Задаем параметры cloud-init ](./conf/instance-group.tf)
 
-При помощи cloud-init задаем насройку при первом запуске VM  где   <h1>LAMP Instance Group</h1>
-      <img src="https://vgorshkov-bucket-clouds-dz02.storage.yandexcloud.net/Victor_E_Gorshkov.jpg" alt="Picture">
+- При помощи cloud-init задаем насройку при первом запуске VM  где   <h1>LAMP Instance Group</h1>
+      <img src="https://vlasov-v-hw15-2-2026.storage.yandexcloud.net/Vladimir_Vlasov.jpg" alt="Picture">
 
- - Разместить в стартовой веб-странице шаблонной ВМ ссылку на картинку из бакета.
+ - Размещаем в стартовой веб-странице шаблонной ВМ ссылку на картинку из бакета.
  
-После запуска ВМ страница доступна по 
-http://111.88.144.28
+После запуска ВМ страница c картинкой доступна по http://51.250.90.54/
 
-![1-st](image-12.png)
+![p1](./img/pic1.jpg)
 
-http://89.169.185.251
+или по http://51.250.13.175/
 
-![2-nd](image-13.png)
+![p2](./img/pic2.jpg)
 
-http://111.88.147.247
+или по http://51.250.84.142/
 
-![3-th](image-14.png)
-
+![p3](./img/pic3.jpg)
 
 Запись производится в корень index.html
  ```
@@ -149,7 +140,7 @@ http://111.88.147.247
     content: |
  ```
 
- - Настроить проверку состояния ВМ.
+ - Настроим проверку состояния ВМ.
 
 Прописывается в instance-group.tf
 ```

@@ -205,5 +205,10 @@ unhealthy_threshold = 2 — достаточно одной неудачной �
 ![Видим что сайт работает](./img/yes_site.jpg)
 
 
+[<Файлы для terraform>](./cfg/)
+
+Удаляем все ресурсы командой ```bash terraform destroy ```
+
+![Удаляем](./img/del_ter.jpg)
 
 

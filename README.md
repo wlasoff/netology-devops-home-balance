@@ -97,7 +97,7 @@ echo "<html><h1>My cool web-server</h1></html>" > index.html
 ![backet](./img/yc_backet3.jpg)
 
 
-[<Тут конфигурация Bucket'a>](./conf/bucket.tf)
+[<Тут конфигурация Bucket'a>](./cfg/bucket.tf)
 
 
 - Права доступа на картинку;

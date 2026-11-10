@@ -207,11 +207,10 @@ unhealthy_threshold = 2 — достаточно одной неудачной �
 
 [<Файлы для terraform>](./cfg/)
 
-Удаляем все ресурсы на yc командой
+Удаляем все ресурсы на Yandex Cloud командой
 
 ```bash
  terraform destroy
    ```
 ![Удаляем](./img/del_ter.jpg)
-
 
